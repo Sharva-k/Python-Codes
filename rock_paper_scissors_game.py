@@ -44,6 +44,8 @@ if comp_choice == 0:
     print("rock")
 elif comp_choice == 1:
     print("scissors")
+else:
+    print("paper")
 print(game_images[comp_choice])
 
 if user_choice>=3 or user_choice<0:
