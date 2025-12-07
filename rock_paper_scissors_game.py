@@ -40,6 +40,8 @@ if user_choice>=0 or user_choice<3:
 comp_choice = random.randint(0,2)
 
 print(f"Computer chose:")
+if comp_choice == 0:
+    print("rock")
 print(game_images[comp_choice])
 
 if user_choice>=3 or user_choice<0:
