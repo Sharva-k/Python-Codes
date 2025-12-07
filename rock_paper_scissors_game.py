@@ -29,6 +29,7 @@ scissors = '''
 game_images = [rock,scissors,paper]
 user_choice = int(input("What do you chose ? Type 0 for rock , 1 for scissors , 2 for paper: "))
 if user_choice>=0 or user_choice<3:
+    print("You chose")
     print(game_images[user_choice])
 comp_choice = random.randint(0,2)
 
