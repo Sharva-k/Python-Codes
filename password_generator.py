@@ -7,17 +7,39 @@ symbols = list(string.punctuation)
 
 # easy generator
 
-password = ""
+# password = ""
+
+# in_letters = int(input("Enter number of letters you want in your password: "))
+# in_symbols = int(input("Enter number of symbols you want in your password: "))
+# in_numbers = int(input("Enter number of numbers you want in your password: "))
+
+# for i in range(1,in_letters+1):
+#     password+= random.choice(letters)
+# for i in range(1, in_symbols):
+#     password+= random.choice(symbols)
+# for i in range(1,in_numbers):
+#     password+= random.choice(digits)
+
+# print(password)
+
+# hard level
+
+password_lst = []
 
 in_letters = int(input("Enter number of letters you want in your password: "))
 in_symbols = int(input("Enter number of symbols you want in your password: "))
 in_numbers = int(input("Enter number of numbers you want in your password: "))
 
 for i in range(1,in_letters+1):
-    password+= random.choice(letters)
+    password_lst+= random.choice(letters)
 for i in range(1, in_symbols):
-    password+= random.choice(symbols)
+    password_lst+= random.choice(symbols)
 for i in range(1,in_numbers):
-    password+= random.choice(digits)
+    password_lst+= random.choice(digits)
 
-print(password)
+password =""
+random.shuffle(password_lst)
+
+for char in password_lst:
+    password+= char
+print(f"Your password is: {password}")
