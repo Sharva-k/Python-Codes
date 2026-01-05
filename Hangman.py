@@ -3,11 +3,19 @@ word_list = ["Cake" , "Guitar" , "Pen"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-guess = input("Guess a letter: ").lower()
+placeholder = ""
+for i in range(len(chosen_word)):
+    placeholder+="_ "
+print(placeholder)
+
+guess = input("\nGuess a letter: ").lower()
+
+display = ""
 
 for letter in chosen_word:
     if letter == guess:
-        print("Right!")
+        display+=letter
     else:
-        print("Wrong!")
+        display+=" _ "
+print(display)
      
