@@ -55,7 +55,9 @@ stages = [r'''
       |
 =========
 ''']
-word_list = ["Cake" , "Guitar" , "Pen"]
+word_list = ["cake" , "guitar" , "pen"]
+lives = 6
+
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
@@ -83,6 +85,13 @@ while not game_over:
         else:
             display+=" _ "
     print(display)
+
+    if guess not in chosen_word:
+        lives-=1
+        if lives == 0:
+            game_over = True
+            print("You Lose!")
+
     if "_" not in display:
         game_over = True
         print("You win!")
