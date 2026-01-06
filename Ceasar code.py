@@ -17,11 +17,16 @@ shift = int(input("Type the shift number:\n"))
 
 
 
-def decrypt(original_txt,shift_count):
+
+def ceasar(original_txt,shift_count,encode_or_decode):
     output_txt=""
+
     for letter in original_txt:
+
+        if encode_or_decode == "decode":
+            shift_count*=-1
+
         shifted_position = alphabet.index(letter)-shift_count
         shifted_position%=len(alphabet)
         output_txt+=alphabet[shifted_position]
     print(f"Here is the decoded msg:{output_txt}")
-decrypt(original_txt=text,shift_count=shift)
