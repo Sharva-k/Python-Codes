@@ -4,14 +4,14 @@ should_continue = True
 
 def ceasar(original_txt,shift_count,encode_or_decode):
     output_txt=""
-
+    if encode_or_decode == "decode":
+                shift_count*=-1
     for letter in original_txt:
         
         if letter not in alphabet:
             output_txt+=letter
         else:
-            if encode_or_decode == "decode":
-                shift_count*=-1
+            
 
             shifted_position = alphabet.index(letter)+shift_count
             shifted_position%=len(alphabet)
