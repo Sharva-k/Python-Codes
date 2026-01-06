@@ -4,13 +4,24 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-def encrypt(original_txt , shift_count):
-    cipher_txt =""
+# def encrypt(original_txt , shift_count):
+#     cipher_txt =""
+#     for letter in original_txt:
+#         shifted_position = alphabet.index(letter) + shift_count
+#         shifted_position%=len(alphabet)
+
+#         cipher_txt+=alphabet[shifted_position]
+
+#     print(f"Here is the encoded message:{cipher_txt}")
+# encrypt(original_txt=text,shift_count=shift)
+
+
+
+def decrypt(original_txt,shift_count):
+    output_txt=""
     for letter in original_txt:
-        shifted_position = alphabet.index(letter) + shift_count
+        shifted_position = alphabet.index(letter)-shift_count
         shifted_position%=len(alphabet)
-
-        cipher_txt+=alphabet[shifted_position]
-
-    print(f"Here is the encoded message:{cipher_txt}")
-encrypt(original_txt=text,shift_count=shift)
+        output_txt+=alphabet[shifted_position]
+    print(f"Here is the decoded msg:{output_txt}")
+decrypt(original_txt=text,shift_count=shift)
