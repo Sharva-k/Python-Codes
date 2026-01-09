@@ -26,4 +26,4 @@ for symbol in operations:
 op = input("Pick an operation: ")
 num2 = float(input("What is the second number: "))
 
-print(operations[op](num1,num2))
+print(f"{operations[op](num1,num2)}")
