@@ -20,7 +20,10 @@ operations = {
     "/" : div,
 }
 
-num1 = input("What is the first number: ")
+num1 = float(input("What is the first number: "))
 for symbol in operations:
     print(symbol)
 op = input("Pick an operation: ")
+num2 = float(input("What is the second number: "))
+
+print(operations[op](num1,num2))
