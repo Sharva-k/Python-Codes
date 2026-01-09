@@ -20,4 +20,7 @@ operations = {
     "/" : div,
 }
 
-print(operations["*"](4,8))
+num1 = input("What is the first number: ")
+for symbol in operations:
+    print(symbol)
+op = input("Pick an operation: ")
