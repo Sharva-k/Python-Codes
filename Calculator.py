@@ -28,11 +28,11 @@ while should_accumulate:
         print(symbol)
     op = input("Pick an operation: ")
     num2 = float(input("What is the second number: "))
-    ans = operations[op](num1,num2)
-    print(f"{num1} {op} {num2} = {ans}")
+    answer = operations[op](num1,num2)
+    print(f"{num1} {op} {num2} = {answer}")
 
-    choice = input(f"Type y to continue claculating with {ans} , or type n to exit: ")
+    choice = input(f"Type y to continue claculating with {answer} , or type n to exit: ")
     if choice == "y":
-        num1 = ans
+        num1 = answer
     else:
         should_accumulate = False
