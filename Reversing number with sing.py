@@ -18,4 +18,6 @@ def reverse(x):
         else:
             return 0
     return answer*sign
-print(reverse(-123))
+
+choice = int(input("Enter number you want to reverse (with sign): "))
+print(reverse(choice))
