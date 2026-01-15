@@ -12,7 +12,7 @@ def reverse(x):
 
     answer = 0
     while x:
-        if answer<= (2^31 - (x%10))/10:
+        if answer<= (2**31 - (x%10))/10:
             answer = answer*10 + x%10
             x//=10
         else:
