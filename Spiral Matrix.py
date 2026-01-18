@@ -14,12 +14,12 @@ while top<=bottom and left<= right: #top boundary
         output.append(matrix[i][right])
 
     right-=1
-    if top<=bottom:
+    if left<=right:
         for i in range(right,left-1,-1):
             output.append(matrix[bottom][i])
     bottom-=1
 
-    if left<=right:
+    if top<=bottom:
         for i in range(bottom,top-1,-1):
             output.append(matrix[i][left])
     left+=1
