@@ -14,7 +14,7 @@ for i in range(len(n)):
         ans+=i
         break
 
-for i in range(len(n)-1,-1):
+for i in range(len(n)-1,-1,-1):
     if is_prime(n[i]):
         ans-=i
         break
