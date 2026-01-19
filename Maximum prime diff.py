@@ -18,4 +18,4 @@ for i in range(len(n)-1,-1,-1):
     if is_prime(n[i]):
         ans-=i
         break
-print(ans)
+print(abs(ans))
