@@ -9,3 +9,4 @@ def bal(purchaseAmount):
     balance-=purchaseAmount
     return balance
 pAmount = int(input("Enter purachase amount: "))
+result = bal(pAmount)
