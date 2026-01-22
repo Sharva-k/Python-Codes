@@ -8,4 +8,4 @@ def bal(purchaseAmount):
             purchaseAmount+=(10-temp)
     balance-=purchaseAmount
     return balance
-print(bal(4))
+pAmount = int(input("Enter purachase amount: "))
