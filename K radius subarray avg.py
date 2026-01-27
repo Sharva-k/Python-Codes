@@ -13,4 +13,4 @@ for i in range(k,len(n)-k):
     sub=0
 for i in range(len(n)-k,len(n)):
     output.append(-1)
-print(output)
+print(f"result is: {output}")
