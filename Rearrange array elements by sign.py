@@ -9,4 +9,4 @@ for i in nums:
     elif i<0:
         res[neg] = i
         neg+=2
-print(f"resulting array is: {res}")
+print(f"resulting array of sorted pos and neg integers is: {res}")
