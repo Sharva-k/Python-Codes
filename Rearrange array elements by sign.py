@@ -9,4 +9,4 @@ for i in nums:
     elif i<0:
         res[neg] = i
         neg+=2
-
+print(res)
